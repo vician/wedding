@@ -106,7 +106,7 @@ a:focus {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #7f470c;
+  color: #000000;
   background-color: transparent;
 }
 .navbar-default .navbar-toggle { border-color: transparent }
@@ -308,38 +308,38 @@ a:focus {
   margin-bottom: 10px;
   color: #00aced;
 }
-#contact {
+#touch {
   background: url(../img/cover/contact.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
-#contact,
-#contact a,
-#contact a:hover,
-#contact a:focus { color: #fff }
-#contact .heading .border { background-color: #fff }
-#contact a { display: block }
-#contact i { margin: 60px 0 15px }
-#footer {
+#touch,
+#touch a,
+#touch a:hover,
+#touch a:focus { color: #fff }
+#touch .heading .border { background-color: #fff }
+#touch a { display: block }
+#touch i { margin: 60px 0 15px }
+footer {
   padding: 40px 0;
   color: #ccc;
   text-align: center;
   background-color: #282828;
 }
-#footer a,
-#footer a:hover,
-#footer a:focus { color: #fff }
-#footer .social { margin-bottom: 20px }
-#footer .social li .facebook:hover,
-#footer .social li .facebook:focus { color: #3b5998 }
-#footer .social li .twitter:hover,
-#footer .social li .twitter:focus { color: #00aced }
-#footer .social li .google-plus:hover,
-#footer .social li .google-plus:focus { color: #d34836 }
-#footer .social li .dribbble:hover,
-#footer .social li .dribbble:focus { color: #ea4c89 }
-#footer .copyright { margin-bottom: 0 }
+footer a,
+footer a:hover,
+footer a:focus { color: #fff }
+footer .social { margin-bottom: 20px }
+footer .social li .facebook:hover,
+footer .social li .facebook:focus { color: #3b5998 }
+footer .social li .twitter:hover,
+footer .social li .twitter:focus { color: #00aced }
+footer .social li .google-plus:hover,
+footer .social li .google-plus:focus { color: #d34836 }
+footer .social li .dribbble:hover,
+footer .social li .dribbble:focus { color: #ea4c89 }
+footer .copyright { margin-bottom: 0 }
 .work .title {
   color: #222;
 }
