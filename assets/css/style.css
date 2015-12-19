@@ -133,7 +133,7 @@ a:focus {
   width: 80px;
   height: 2px;
   margin: 0 auto;
-  background-color: #71be3c;
+  background-color: brown;
 }
 .page .heading p { margin: 20px auto 0 }
 #home {
@@ -361,3 +361,5 @@ footer .copyright { margin-bottom: 0 }
   #portfolio .items li { width: 100% }
   #testimonials .quote { padding: 0 30px }
 }
+
+#map-container { height: 30% }
