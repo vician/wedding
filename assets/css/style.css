@@ -273,6 +273,9 @@ a:focus {
 #about .teammate .profile-photo {
   overflow: hidden
 }
+.profile-photo img {
+	margin: 0 auto;
+}
 #about .teammate .profile-photo img {
   /*-webkit-transition: all .4s ease;
      -moz-transition: all .4s ease;
