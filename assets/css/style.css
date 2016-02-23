@@ -7,20 +7,21 @@ License: Apache License v2.0
 body {
   font-family: 'Arial', sans-serif;
   color: #444;
+	font-size: 14pt;
 }
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 { font-weight: 300 }
+h4 {font-size: 16pt;}
 *,
 *:focus { outline: none !important }
-a { color: #2d2d2d }
+a { color: brown; font-weight: bold; }
 a:hover,
 a:focus {
-  color: brown;
-  text-decoration: none;
+  color: #2d2d2d;
+  text-decoration: underline;
 }
 .hiding { opacity: 0 }
 .showing { opacity: 1 }
@@ -85,6 +86,9 @@ a:focus {
   background-image: url(../img/fading-line.gif);
   background-repeat: no-repeat;
   background-position: center center;
+}
+.navbar{
+  font-size: 14px;
 }
 #navbar-top { min-height: 51px }
 .navbar-default {
@@ -344,6 +348,7 @@ footer .social li .google-plus:focus { color: #d34836 }
 footer .social li .dribbble:hover,
 footer .social li .dribbble:focus { color: #ea4c89 }
 footer .copyright { margin-bottom: 0 }
+footer .copyright {font-size: 10pt;}
 .work .title {
   color: #222;
 }
