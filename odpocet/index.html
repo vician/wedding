@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Svatba Viciánovi, Martin Vicián, Klára Zapletalován, Martin a Klára">
     <meta name="author" content="Martin Vicián">
+		<meta name="theme-color" content="#fffce1">
     <link rel="shortcut icon" href="../assets/ico/vicianovi.png">
     <title>Viciánovi.cz</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,600">
@@ -34,14 +35,35 @@
   <span id="clock" style="color: brown; font-weight: bold; font-size: 2em;"></span>
 
 <script type="text/javascript">
-$('#clock').countdown('2016/06/04 14:00:00', function(event) {
+/*$('#clock').countdown('2016/06/04 14:00:00', function(event) {
      var $this = $(this).html(event.strftime(''
              + '<span style="display:inline;">%w</span> tydnu '
              + '<span style="display:inline;">%d</span> dni '
              + '<span style="display:inline;">%H</span> hodin '
              + '<span style="display:inline;">%M</span> minut '
              + '<span style="display:inline;">%S</span> vterin'));
-  });
+  });*/
+
+$('#clock').countdown('2016/06/04 14:00:00', {elapse: true})
+	.on('update.countdown', function(event) {
+		if (event.elapsed) { // Either true or false
+				// Counting up...
+     var $this = $(this).html(event.strftime('Manželé již: '
+             + '<span style="display:inline;">%-w</span> týdnů '
+             + '<span style="display:inline;">%-d</span> dní '
+             + '<span style="display:inline;">%-H</span> hodin '
+             + '<span style="display:inline;">%-M</span> minut '
+             + '<span style="display:inline;">%-S</span> vteřin'));
+    } else {
+	      // Countdown...
+     var $this = $(this).html(event.strftime('Do svatby zbýva: '
+             + '<span style="display:inline;">%-w</span> týdnů '
+             + '<span style="display:inline;">%-d</span> dní '
+             + '<span style="display:inline;">%-H</span> hodin '
+             + '<span style="display:inline;">%-M</span> minut '
+             + '<span style="display:inline;">%-S</span> vteřin'));
+    }
+ });
 </script>
 
 		</section>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Svatba Viciánovi, Martin Vicián, Klára Zapletalován, Martin a Klára">
     <meta name="author" content="Martin Vicián">
+		<meta name="theme-color" content="#fffce1">
     <link rel="shortcut icon" href="../assets/ico/vicianovi.png">
     <title>Viciánovi.cz</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,600">
@@ -34,13 +35,23 @@
   <span id="clock" style="color: brown; font-weight: bold; font-size: 2em;"></span>
 
 <script type="text/javascript">
-$('#clock').countdown('2016/06/04 14:00:00', function(event) {
-     var $this = $(this).html(event.strftime(''
+$('#clock').countdown('2016/06/04 14:00:00', {elapse: true})
+	.on('update.countdown',function(event) {
+		if (event.elapsed) {
+			var $this = $(this).html(event.strftime('Married for '
              + '<span style="display:inline;">%w</span> weeks '
              + '<span style="display:inline;">%d</span> days '
              + '<span style="display:inline;">%H</span> hr '
              + '<span style="display:inline;">%M</span> min '
              + '<span style="display:inline;">%S</span> sec'));
+		} else {
+			var $this = $(this).html(event.strftime('Wedding countdown: '
+             + '<span style="display:inline;">%w</span> weeks '
+             + '<span style="display:inline;">%d</span> days '
+             + '<span style="display:inline;">%H</span> hr '
+             + '<span style="display:inline;">%M</span> min '
+             + '<span style="display:inline;">%S</span> sec'));
+		}
   });
 </script>
 
